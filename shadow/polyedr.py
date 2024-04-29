@@ -173,8 +173,8 @@ class Polyedr:
     # NEW: Является ли точка хорошей
     def is_good(self, point):
         x, y = point.x, point.y
-        return not ((-1 * self.c <= x <= 1 * self.c)
-                    and (-1 * self.c <= y <= 1 * self.c))
+        return not ((-0.5 * self.c <= x <= 0.5 * self.c)
+                    and (-0.5 * self.c <= y <= 0.5 * self.c))
 
     # Метод изображения полиэдра
     def draw(self, tk="skip", show=True):  # pragma: no cover

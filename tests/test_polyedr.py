@@ -37,10 +37,10 @@ class TestPolyedr(unittest.TestCase):
     def test_num_edges(self):
         self.assertEqual(len(self.polyedr.edges), 16)
 
-    # NEW: для коробки "внутри" квадрата - ноль
+    # NEW: для коробки квадрата
     def test_good_box(self):
         self.polyedr.draw(show=False)
-        self.assertEqual(self.polyedr.good_sum, 0.0)
+        self.assertEqual(self.polyedr.good_sum, 9.0)
 
     # NEW: для двух плоскостей
     def test_good_planes(self):
